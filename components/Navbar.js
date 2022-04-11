@@ -35,9 +35,11 @@ function Navbar() {
             <header id="site-header" className="fixed-top">
                 <div className="container">
                     <nav className="navbar navbar-expand-lg stroke">
-                        <a className="navbar-brand" href="index.html">
+                    <Link href="/">
+                        <a className="navbar-brand" >
                             <span className="fa fa-laptop"></span> Abhinandan
                         </a>
+                        </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"><i className="fa-solid fa-bars"></i></span>
                         </button>
