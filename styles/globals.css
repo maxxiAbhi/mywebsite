@@ -6155,3 +6155,9 @@ span.cursor {
 .mya-btn{
   color: #fff !important;
 }
+
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}

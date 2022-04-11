@@ -1,10 +1,10 @@
-import React,{ useRef } from 'react'
+import React from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 function contact() {
-  const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -68,7 +68,7 @@ function contact() {
                 </div>
               </div>
               <div className="map-content-9">
-                <form ref={form} action="https://sendmail.w3layouts.com/submitForm" method="post" onSubmit={sendEmail} >
+                <form action="https://sendmail.w3layouts.com/submitForm" method="post" onSubmit={sendEmail} >
                   <div className="twice-two">
                     <input type="text" className="form-control" name="name" id="w3lName" placeholder="Name" 
                       required="" />
